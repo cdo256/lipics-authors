@@ -1,0 +1,23 @@
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.dvi
+*.pdf
+*.xdv
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+*~
+.*.swp  # Vim swap files
+result
+svg-inkscape
+.direnv/*
