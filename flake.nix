@@ -12,10 +12,6 @@
         pkgs = import nixpkgs { inherit system; };
         texlive = pkgs.texliveFull.withPackages (ps: [
           ps.latexmk
-          ps.pdflatex
-          ps.pgf # TikZ
-          pkgs.inkscape
-          ps.luatex
         ]);
       in
       {
@@ -37,8 +33,8 @@
           '';
 
           installPhase = ''
-            mkdir -p $out
-            cp paper.pdf $out/
+            mkdir -p $out/share/texmf-nix/tex/
+            cp *.pdf *.cls *.sty *. $out/share/texmf-nix/tex/
           '';
         };
       });
