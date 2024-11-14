@@ -21,7 +21,7 @@
             texlive
           ];
         };
-        packages.default = pkgs.stdenv.mkDerivation {
+        packages.${system}.default = pkgs.stdenv.mkDerivation {
           name = "lipics";
           src = ./.;
           
@@ -34,7 +34,7 @@
 
           installPhase = ''
             mkdir -p $out/share/texmf-nix/tex/
-            cp *.pdf *.cls *.sty *. $out/share/texmf-nix/tex/
+            cp *.pdf *.cls *.sty $out/share/texmf-nix/tex/
           '';
         };
       });
