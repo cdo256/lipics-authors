@@ -22,7 +22,7 @@
           ];
         };
         packages.default = pkgs.stdenv.mkDerivation {
-          name = "lipics-example";
+          name = "lipics";
           src = ./.;
           
           nativeBuildInputs = [ texlive ];
