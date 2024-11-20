@@ -15,14 +15,15 @@
         ]);
       in
       {
-        #packages.${system}.devShell = pkgs.stdenv.mkShell {
-        #  nativeBuildInputs = [ 
-        #    pkgs.gnumake
-        #    texlive
-        #  ];
-        #};
-        packages.${system}.lipics = pkgs.stdenv.mkDerivation {
+        devShell.default = pkgs.stdenv.mkShell {
+          nativeBuildInputs = [ 
+            pkgs.gnumake
+            texlive
+          ];
+        };
+        packages.lipics = pkgs.stdenv.mkDerivation {
           name = "lipics";
+          pname = "lipics";
           src = ./.;
           
           nativeBuildInputs = [ texlive ];
