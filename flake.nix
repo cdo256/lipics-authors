@@ -32,7 +32,7 @@
 
           buildPhase = ''
             export XDG_CACHE_HOME=$(mktemp -d)
-            latexmk -pdf --shell-escape lipics-v2021-sample-article.tex
+            #latexmk -pdf --shell-escape lipics-v2021-sample-article.tex
           '';
 
           installPhase = ''
