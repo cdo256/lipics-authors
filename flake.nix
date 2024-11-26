@@ -21,7 +21,7 @@
             texlive
           ];
         };
-        packages.lipics = pkgs.stdenv.mkDerivation {
+        packages.default = pkgs.stdenv.mkDerivation {
           name = "lipics";
           pname = "lipics";
           src = ./.;
