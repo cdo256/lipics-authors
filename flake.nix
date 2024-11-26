@@ -28,7 +28,7 @@
           
           outputs = [ "out" "tex" ];
 
-          nativeBuildInputs = [ texlive ];
+          #nativeBuildInputs = [ texlive ];
 
           buildPhase = ''
             export XDG_CACHE_HOME=$(mktemp -d)
