@@ -40,8 +40,8 @@
             mkdir -p $tex/tex/latex/lipics/
             #cp *.pdf *.cls *.sty $out/share/texmf/tex/latex/lipics/
             #cp *.pdf *.cls *.sty $tex/tex/latex/lipics/
-            cp *.cls $out/share/texmf/tex/latex/lipics/
-            cp *.cls $tex/tex/latex/lipics/
+            #cp *.cls $out/share/texmf/tex/latex/lipics/
+            #cp *.cls $tex/tex/latex/lipics/
           '';
         };
       });
