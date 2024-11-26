@@ -34,8 +34,8 @@
           '';
 
           installPhase = ''
-            mkdir -p $out/share/texmf-nix/tex/
-            cp *.pdf *.cls *.sty $out/share/texmf-nix/tex/
+            mkdir -p $out/share/texmf/tex/latex/lipics/
+            cp *.pdf *.cls *.sty $out/share/texmf/tex/latex/lipics/
           '';
         };
       });
