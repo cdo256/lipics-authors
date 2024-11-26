@@ -26,6 +26,8 @@
           pname = "lipics";
           src = ./.;
           
+          outputs = [ "out" "tex" ];
+
           nativeBuildInputs = [ texlive ];
 
           buildPhase = ''
@@ -35,7 +37,9 @@
 
           installPhase = ''
             mkdir -p $out/share/texmf/tex/latex/lipics/
+            mkdir -p $tex/tex/latex/lipics/
             cp *.pdf *.cls *.sty $out/share/texmf/tex/latex/lipics/
+            cp *.pdf *.cls *.sty $tex/tex/latex/lipics/
           '';
         };
       });
